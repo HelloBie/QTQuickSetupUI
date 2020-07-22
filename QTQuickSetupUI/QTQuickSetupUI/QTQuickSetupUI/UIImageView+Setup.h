@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 @interface UIImageView (Setup)
 - (UIImageView *(^)(UIImage *image))set_image;
 - (UIImageView *(^)(NSArray *animationImages))set_animationImages;
