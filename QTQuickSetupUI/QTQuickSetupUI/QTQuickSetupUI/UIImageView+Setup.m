@@ -7,7 +7,7 @@
 //
 
 #import "UIImageView+Setup.h"
-
+#import "UIImageView+WebCache.h"
 @implementation UIImageView (Setup)
 - (UIImageView *(^)(UIImage *image))set_image
 {
