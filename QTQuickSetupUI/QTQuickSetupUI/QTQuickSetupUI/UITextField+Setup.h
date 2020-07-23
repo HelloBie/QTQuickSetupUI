@@ -14,7 +14,7 @@
 - (UITextField *(^)(NSString * placehold))set_placehold;
 - (UITextField *(^)(UIColor *textColor))set_textColor;
 - (UITextField *(^)(UIFont *font))set_font;
-- (UITextField *(^)(UITextAlignment alignment))set_alignment;
+- (UITextField *(^)(NSTextAlignment alignment))set_alignment;
 
 - (UITextField *(^)(UIColor *backgroundColor))   set_backgroundColor;
 - (UITextField *(^)(UIColor *borderColor))       set_borderColor;

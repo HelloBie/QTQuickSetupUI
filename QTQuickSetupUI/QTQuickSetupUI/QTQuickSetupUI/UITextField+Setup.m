@@ -52,9 +52,9 @@
     };
 }
 
-- (UITextField *(^)(UITextAlignment alignment))set_alignment
+- (UITextField *(^)(NSTextAlignment alignment))set_alignment
 {
-    return ^(UITextAlignment alignment){
+    return ^(NSTextAlignment alignment){
         self.textAlignment = alignment;
         return self;
     };
