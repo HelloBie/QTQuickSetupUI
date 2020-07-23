@@ -290,6 +290,7 @@
 		954EAF6A24C880DA00EB61B4 /* QTQuickSetupUI */ = {
 			isa = PBXGroup;
 			children = (
+				95C4FFD724C93D2200B3885F /* SDWebImage */,
 				954EAFA024C8834F00EB61B4 /* QTQuickSetupUI */,
 				954EAF6B24C880DA00EB61B4 /* AppDelegate.h */,
 				954EAF6C24C880DA00EB61B4 /* AppDelegate.m */,
@@ -327,7 +328,6 @@
 		954EAFA024C8834F00EB61B4 /* QTQuickSetupUI */ = {
 			isa = PBXGroup;
 			children = (
-				95C4FFD724C93D2200B3885F /* SDWebImage */,
 				954EAFB924C887C400EB61B4 /* QTQuickSetupUI.h */,
 				954EAFA824C886E700EB61B4 /* UIButton+Setup.h */,
 				954EAFB024C886E700EB61B4 /* UIButton+Setup.m */,
