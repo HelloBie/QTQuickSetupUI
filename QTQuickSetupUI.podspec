@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
 s.name         = "QTQuickSetupUI"
-s.version      = "0.3"
+s.version      = "0.4"
 s.summary      = "QTQuickSetupUI"
 
 
@@ -20,9 +20,9 @@ s.author             = { "不不不紧张" => "1005903848@qq.com" }
 s.source       = { :git => "https://github.com/HelloBie/QTQuickSetupUI.git", :tag => "#{s.version}" }
 
 
-s.ios.frameworks = "Foundation","UIKit"
+s.frameworks = "Foundation","UIKit"
 
-s.ios.deployment_target = '6.0' # minimum SDK with autolayout
+s.ios.deployment_target = '9.0' # minimum SDK with autolayout
 
 s.source_files  = 'QTQuickSetupUI/QTQuickSetupUI/QTQuickSetupUI/*.{h,m}'
 # s.source_files  = 'QTCoreMain/QTCore/**/*.{h,m}'

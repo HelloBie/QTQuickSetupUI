@@ -8,7 +8,7 @@
 
 #import "UIButton+Setup.h"
 #import "UIButton+SSEdgeInsets.h"
-#import "UIImageView+Setup.h
+#import "UIImageView+Setup.h"
 #import "UILabel+Setup.h"
 #import "UIScrollView+Setup.h"
 #import "UITextField+Setup.h"
