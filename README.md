@@ -12,3 +12,4 @@
     
     .set_superView(self.window);
     
+支持cocoapods : pod 'QTQuickSetupUI'
