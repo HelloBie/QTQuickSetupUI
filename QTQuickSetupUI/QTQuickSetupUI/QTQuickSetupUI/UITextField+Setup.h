@@ -16,15 +16,25 @@
 - (UITextField *(^)(UIFont *font))set_font;
 - (UITextField *(^)(NSTextAlignment alignment))set_alignment;
 
-- (UITextField *(^)(UIColor *backgroundColor))   set_backgroundColor;
-- (UITextField *(^)(UIColor *borderColor))       set_borderColor;
-- (UITextField *(^)(CGRect frame))               set_frame;
-- (UITextField *(^)(UIView *superView))          set_superView;
-- (UITextField *(^)(CGFloat borderwidth))        set_borderWidth;
-- (UITextField *(^)(CGFloat radius))             set_radius;
-- (UITextField *(^)(BOOL clipsToBounds))         set_clipsToBounds;
-- (UITextField *(^)(CGPoint center))             set_center;
-- (UITextField *(^)(CGAffineTransform transForm))set_transForm;
-- (UITextField *(^)(BOOL hidden))                set_hidden;
-- (UITextField *(^)(BOOL userInteractionEnabled))set_userInteractionEnabled;
+- (UITextField *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
+
+- (UITextField *(^)(UIColor *borderColor))qt_setBorderColor;
+
+- (UITextField *(^)(CGRect frame))qt_setFrame;
+
+- (UITextField *(^)(UIView *superView))qt_setSuperView;
+
+- (UITextField *(^)(CGFloat borderwidth))qt_setBorderWidth;
+
+- (UITextField *(^)(CGFloat radius))qt_setRadius;
+
+- (UITextField *(^)(BOOL clipsToBounds))qt_setClipsToBounds;
+
+- (UITextField *(^)(CGPoint center))qt_setCenter;
+
+- (UITextField *(^)(CGAffineTransform transForm))qt_setTransForm;
+
+- (UITextField *(^)(BOOL hidden))qt_setHidden;
+
+- (UITextField *(^)(BOOL userInteractionEnabled))qt_setUserInteractionEnabled;
 @end

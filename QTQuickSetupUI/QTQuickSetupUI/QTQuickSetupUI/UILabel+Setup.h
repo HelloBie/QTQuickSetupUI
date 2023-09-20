@@ -15,15 +15,26 @@
 - (UILabel *(^)(NSTextAlignment textAlignment))set_textAlignment;
 - (UILabel *(^)(NSInteger numberOfline))set_numberOfLine;
 
-- (UILabel *(^)(UIColor *backgroundColor))   set_backgroundColor;
-- (UILabel *(^)(UIColor *borderColor))       set_borderColor;
-- (UILabel *(^)(CGRect frame))               set_frame;
-- (UILabel *(^)(UIView *superView))          set_superView;
-- (UILabel *(^)(CGFloat borderwidth))        set_borderWidth;
-- (UILabel *(^)(CGFloat radius))             set_radius;
-- (UILabel *(^)(BOOL clipsToBounds))         set_clipsToBounds;
-- (UILabel *(^)(CGPoint center))             set_center;
-- (UILabel *(^)(CGAffineTransform transForm))set_transForm;
-- (UILabel *(^)(BOOL hidden))                set_hidden;
-- (UILabel *(^)(BOOL userInteractionEnabled))set_userInteractionEnabled;
+- (UILabel *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
+
+- (UILabel *(^)(UIColor *borderColor))qt_setBorderColor;
+
+- (UILabel *(^)(CGRect frame))qt_setFrame;
+
+- (UILabel *(^)(UIView *superView))qt_setSuperView;
+
+- (UILabel *(^)(CGFloat borderwidth))qt_setBorderWidth;
+
+- (UILabel *(^)(CGFloat radius))qt_setRadius;
+
+- (UILabel *(^)(BOOL clipsToBounds))qt_setClipsToBounds;
+
+- (UILabel *(^)(CGPoint center))qt_setCenter;
+
+- (UILabel *(^)(CGAffineTransform transForm))qt_setTransForm;
+
+- (UILabel *(^)(BOOL hidden))qt_setHidden;
+
+- (UILabel *(^)(BOOL userInteractionEnabled))qt_setUserInteractionEnabled;
+
 @end

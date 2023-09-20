@@ -19,15 +19,25 @@
 - (UIScrollView *(^)(CGFloat minimumZoomScale))set_minimumZoomScale;
 - (UIScrollView *(^)(CGFloat maximumZoomScale))set_maximumZoomScale;
 
-- (UIScrollView *(^)(UIColor *backgroundColor))   set_backgroundColor;
-- (UIScrollView *(^)(UIColor *borderColor))       set_borderColor;
-- (UIScrollView *(^)(CGRect frame))               set_frame;
-- (UIScrollView *(^)(UIView *superView))          set_superView;
-- (UIScrollView *(^)(CGFloat borderwidth))        set_borderWidth;
-- (UIScrollView *(^)(CGFloat radius))             set_radius;
-- (UIScrollView *(^)(BOOL clipsToBounds))         set_clipsToBounds;
-- (UIScrollView *(^)(CGPoint center))             set_center;
-- (UIScrollView *(^)(CGAffineTransform transForm))set_transForm;
-- (UIScrollView *(^)(BOOL hidden))                set_hidden;
-- (UIScrollView *(^)(BOOL userInteractionEnabled))set_userInteractionEnabled;
+- (UIScrollView *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
+
+- (UIScrollView *(^)(UIColor *borderColor))qt_setBorderColor;
+
+- (UIScrollView *(^)(CGRect frame))qt_setFrame;
+
+- (UIScrollView *(^)(UIView *superView))qt_setSuperView;
+
+- (UIScrollView *(^)(CGFloat borderwidth))qt_setBorderWidth;
+
+- (UIScrollView *(^)(CGFloat radius))qt_setRadius;
+
+- (UIScrollView *(^)(BOOL clipsToBounds))qt_setClipsToBounds;
+
+- (UIScrollView *(^)(CGPoint center))qt_setCenter;
+
+- (UIScrollView *(^)(CGAffineTransform transForm))qt_setTransForm;
+
+- (UIScrollView *(^)(BOOL hidden))qt_setHidden;
+
+- (UIScrollView *(^)(BOOL userInteractionEnabled))qt_setUserInteractionEnabled;
 @end

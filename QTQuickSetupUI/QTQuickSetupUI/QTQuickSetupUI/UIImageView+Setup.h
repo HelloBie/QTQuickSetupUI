@@ -12,17 +12,27 @@
 - (UIImageView *(^)(NSArray *animationImages))set_animationImages;
 - (UIImageView *(^)(NSString *url, NSString *placehold))sd_setimag;
 
-- (UIImageView *(^)(UIColor *backgroundColor))   set_backgroundColor;
-- (UIImageView *(^)(UIColor *borderColor))       set_borderColor;
-- (UIImageView *(^)(CGRect frame))               set_frame;
-- (UIImageView *(^)(UIView *superView))          set_superView;
-- (UIImageView *(^)(CGFloat borderwidth))        set_borderWidth;
-- (UIImageView *(^)(CGFloat radius))             set_radius;
-- (UIImageView *(^)(BOOL clipsToBounds))         set_clipsToBounds;
-- (UIImageView *(^)(CGPoint center))             set_center;
-- (UIImageView *(^)(CGAffineTransform transForm))set_transForm;
-- (UIImageView *(^)(BOOL hidden))                set_hidden;
-- (UIImageView *(^)(BOOL userInteractionEnabled))set_userInteractionEnabled;
+- (UIImageView *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
+
+- (UIImageView *(^)(UIColor *borderColor))qt_setBorderColor;
+
+- (UIImageView *(^)(CGRect frame))qt_setFrame;
+
+- (UIImageView *(^)(UIView *superView))qt_setSuperView;
+
+- (UIImageView *(^)(CGFloat borderwidth))qt_setBorderWidth;
+
+- (UIImageView *(^)(CGFloat radius))qt_setRadius;
+
+- (UIImageView *(^)(BOOL clipsToBounds))qt_setClipsToBounds;
+
+- (UIImageView *(^)(CGPoint center))qt_setCenter;
+
+- (UIImageView *(^)(CGAffineTransform transForm))qt_setTransForm;
+
+- (UIImageView *(^)(BOOL hidden))qt_setHidden;
+
+- (UIImageView *(^)(BOOL userInteractionEnabled))qt_setUserInteractionEnabled;
 
 @end
 

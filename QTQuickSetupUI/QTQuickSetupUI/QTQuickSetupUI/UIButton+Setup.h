@@ -18,15 +18,25 @@
 - (UIButton *(^)(UIEdgeInsets imageEdgeInsets))set_imageEdgeInsets;
 - (UIButton *(^)(CGFloat spacing))set_textDown;
 
-- (UIButton *(^)(UIColor *backgroundColor))   set_backgroundColor;
-- (UIButton *(^)(UIColor *borderColor))       set_borderColor;
-- (UIButton *(^)(CGRect frame))               set_frame;
-- (UIButton *(^)(UIView *superView))          set_superView;
-- (UIButton *(^)(CGFloat borderwidth))        set_borderWidth;
-- (UIButton *(^)(CGFloat radius))             set_radius;
-- (UIButton *(^)(BOOL clipsToBounds))         set_clipsToBounds;
-- (UIButton *(^)(CGPoint center))             set_center;
-- (UIButton *(^)(CGAffineTransform transForm))set_transForm;
-- (UIButton *(^)(BOOL hidden))                set_hidden;
-- (UIButton *(^)(BOOL userInteractionEnabled))set_userInteractionEnabled;
+- (UIButton *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
+
+- (UIButton *(^)(UIColor *borderColor))qt_setBorderColor;
+
+- (UIButton *(^)(CGRect frame))qt_setFrame;
+
+- (UIButton *(^)(UIView *superView))qt_setSuperView;
+
+- (UIButton *(^)(CGFloat borderwidth))qt_setBorderWidth;
+
+- (UIButton *(^)(CGFloat radius))qt_setRadius;
+
+- (UIButton *(^)(BOOL clipsToBounds))qt_setClipsToBounds;
+
+- (UIButton *(^)(CGPoint center))qt_setCenter;
+
+- (UIButton *(^)(CGAffineTransform transForm))qt_setTransForm;
+
+- (UIButton *(^)(BOOL hidden))qt_setHidden;
+
+- (UIButton *(^)(BOOL userInteractionEnabled))qt_setUserInteractionEnabled;
 @end
