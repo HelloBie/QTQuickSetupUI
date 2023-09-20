@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
 s.name         = "QTQuickSetupUI"
-s.version      = "0.72"
+s.version      = "0.73"
 s.summary      = "QTQuickSetupUI"
 
 
