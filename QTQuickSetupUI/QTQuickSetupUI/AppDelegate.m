@@ -17,9 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [UIView new]
-    .set_frame(CGRectZero)
-    .set_borderWidth(1)
-    .set_superView(self.window);
+    .qt_setFrame(CGRectMake(0, 0, 100, 100))
+    .qt_setBorderWidth(1)
+    .qt_setRadius(10)
+    .qt_setBackgroundColor([UIColor redColor])
+    .qt_setSuperView(self.window);
     // Override point for customization after application launch.
     return YES;
 }
