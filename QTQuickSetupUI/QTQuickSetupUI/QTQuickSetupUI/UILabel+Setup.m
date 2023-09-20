@@ -9,7 +9,7 @@
 #import "UILabel+Setup.h"
 
 @implementation UILabel (Setup)
-- (UILabel *(^)(NSString *text))set_text
+- (UILabel *(^)(NSString *text))qt_setText
 {
 
     return ^(NSString *text){
@@ -18,7 +18,7 @@
     };
 }
 
-- (UILabel *(^)(UIColor *textColor))set_textColor
+- (UILabel *(^)(UIColor *textColor))qt_setTextColor
 {
     return ^(UIColor *textColor)
     {
@@ -27,7 +27,7 @@
     };
 }
 
-- (UILabel *(^)(UIFont *font))set_font
+- (UILabel *(^)(UIFont *font))qt_setFont
 {
     return ^(UIFont *font){
         self.font = font;
@@ -35,7 +35,7 @@
     };
 }
 
-- (UILabel *(^)(NSTextAlignment textAlignment))set_textAlignment
+- (UILabel *(^)(NSTextAlignment textAlignment))qt_setTextAlignment
 {
     return ^(NSTextAlignment textAlignment){
         self.textAlignment = textAlignment;
@@ -43,7 +43,7 @@
     };
 }
 
-- (UILabel *(^)(NSInteger numberOfline))set_numberOfLine
+- (UILabel *(^)(NSInteger numberOfline))qt_setNumberOfLine
 {
     return ^(NSInteger numberOfLine){
         self.numberOfLines = numberOfLine;

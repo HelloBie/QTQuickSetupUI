@@ -9,7 +9,7 @@
 #import "UITextField+Setup.h"
 
 @implementation UITextField (Setup)
-- (UITextField *(^)(UIColor *placeColor))set_placeholdColor
+- (UITextField *(^)(UIColor *placeColor))qt_setPlaceholdColor
 {
     return ^(UIColor *placeColor){
             self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: placeColor}];
@@ -17,7 +17,7 @@
     };
 }
 
-- (UITextField *(^)(NSString * borderColor))set_text
+- (UITextField *(^)(NSString * borderColor))qt_setText
 {
     return ^(NSString *text)
     {
@@ -26,7 +26,7 @@
     };
 }
 
-- (UITextField *(^)(NSString * placehold))set_placehold
+- (UITextField *(^)(NSString * placehold))qt_setPlacehold
 {
     return ^(NSString *placehold)
     {
@@ -35,7 +35,7 @@
     };
 }
 
-- (UITextField *(^)(UIColor *textColor))set_textColor
+- (UITextField *(^)(UIColor *textColor))qt_setTextColor
 {
     return ^(UIColor *textColor)
     {
@@ -44,7 +44,7 @@
     };
 }
 
-- (UITextField *(^)(UIFont *font))set_font
+- (UITextField *(^)(UIFont *font))qt_setFont
 {
     return ^(UIFont *font){
         self.font = font;
@@ -52,7 +52,7 @@
     };
 }
 
-- (UITextField *(^)(NSTextAlignment alignment))set_alignment
+- (UITextField *(^)(NSTextAlignment alignment))qt_setAlignment
 {
     return ^(NSTextAlignment alignment){
         self.textAlignment = alignment;

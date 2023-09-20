@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (Setup)
-- (UILabel *(^)(NSString *text))set_text;
-- (UILabel *(^)(UIColor *textColor))set_textColor;
-- (UILabel *(^)(UIFont *font))set_font;
-- (UILabel *(^)(NSTextAlignment textAlignment))set_textAlignment;
-- (UILabel *(^)(NSInteger numberOfline))set_numberOfLine;
+- (UILabel *(^)(NSString *text))qt_setText;
+- (UILabel *(^)(UIColor *textColor))qt_setTextColor;
+- (UILabel *(^)(UIFont *font))qt_setFont;
+- (UILabel *(^)(NSTextAlignment textAlignment))qt_setTextAlignment;
+- (UILabel *(^)(NSInteger numberOfline))qt_setNumberOfLine;
 
 - (UILabel *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
 

@@ -9,7 +9,7 @@
 #import "UIImageView+Setup.h"
 #import "UIImageView+WebCache.h"
 @implementation UIImageView (Setup)
-- (UIImageView *(^)(UIImage *image))set_image
+- (UIImageView *(^)(UIImage *image))qt_setImage
 {
     return ^(UIImage *image)
     {
@@ -18,23 +18,10 @@
     };
 }
 
-- (UIImageView *(^)(NSArray *animationImages))set_animationImages
+- (UIImageView *(^)(NSArray *animationImages))qt_setAnimationImages
 {
     return ^(NSArray *animationImages){
         [self setAnimationImages:animationImages];
-        return self;
-    };
-}
-
-- (UIImageView *(^)(NSString *url, NSString *placehold))sd_setimag
-{
-    return ^(NSString *url, NSString *placehold){
-        if (placehold.length) {
-            [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:placehold]];
-        }else
-        {
-            [self sd_setImageWithURL:[NSURL URLWithString:url]];
-        }
         return self;
     };
 }

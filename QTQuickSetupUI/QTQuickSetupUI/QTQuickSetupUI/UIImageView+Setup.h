@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 @interface UIImageView (Setup)
-- (UIImageView *(^)(UIImage *image))set_image;
-- (UIImageView *(^)(NSArray *animationImages))set_animationImages;
-- (UIImageView *(^)(NSString *url, NSString *placehold))sd_setimag;
+- (UIImageView *(^)(UIImage *image))qt_setImage;
+- (UIImageView *(^)(NSArray *animationImages))qt_setAnimationImages;
+
 
 - (UIImageView *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
 

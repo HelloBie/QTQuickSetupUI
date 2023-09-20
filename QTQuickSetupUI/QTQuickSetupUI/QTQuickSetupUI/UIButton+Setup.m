@@ -9,7 +9,7 @@
 #import "UIButton+Setup.h"
 
 @implementation UIButton (Setup)
-- (UIButton *(^)(NSString *title))set_title
+- (UIButton *(^)(NSString *title))qt_setTitle
 {
     return ^(NSString *title){
         [self setTitle:title forState:UIControlStateNormal];
@@ -17,7 +17,7 @@
     };
 }
 
-- (UIButton *(^)(UIColor *titleColor))set_titleColor
+- (UIButton *(^)(UIColor *titleColor))qt_setTitleColor
 {
     return ^(UIColor *titleColor){
         [self setTitleColor:titleColor forState:UIControlStateNormal];
@@ -25,7 +25,7 @@
     };
 }
 
-- (UIButton *(^)(NSString * backgroundImage))set_backgroundImage
+- (UIButton *(^)(NSString * backgroundImage))qt_setBackgroundImage
 {
     return ^(NSString *backgroundImage){
         if ([backgroundImage isKindOfClass:[UIImage class]]) {
@@ -39,7 +39,7 @@
     };
 }
 
-- (UIButton *(^)(UIImage * image))set_image
+- (UIButton *(^)(UIImage * image))qt_setImage
 {
     return ^(UIImage *image){
         [self setImage:image forState:UIControlStateNormal];
@@ -48,7 +48,7 @@
     
 }
 
-- (UIButton *(^)(UIEdgeInsets titleEdgeInsets))set_titleEdgeInsets
+- (UIButton *(^)(UIEdgeInsets titleEdgeInsets))qt_setTitleEdgeInsets
 {
     return ^(UIEdgeInsets titleEdgeInsets)
     {
@@ -59,7 +59,7 @@
 }
 
 
-- (UIButton *(^)(UIEdgeInsets imageEdgeInsets))set_imageEdgeInsets
+- (UIButton *(^)(UIEdgeInsets imageEdgeInsets))qt_setImageEdgeInsets
 {
     return ^(UIEdgeInsets imageEdgeInsets){
         self.imageEdgeInsets = imageEdgeInsets;
@@ -67,7 +67,7 @@
     };
 }
 
-- (UIButton *(^)(CGFloat spacing))set_textDown
+- (UIButton *(^)(CGFloat spacing))qt_setTextDown
 {
     return ^(CGFloat spacing){
 

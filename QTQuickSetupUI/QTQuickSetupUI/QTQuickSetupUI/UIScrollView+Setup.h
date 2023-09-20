@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScrollView (Setup)
-- (UIScrollView *(^)(id delegate))set_delegate;
-- (UIScrollView *(^)(CGSize size))set_contentSize;
-- (UIScrollView *(^)(CGPoint contentOffset, BOOL animated))set_contentOffset;
-- (UIScrollView *(^)(UIEdgeInsets contentInset))set_contentInset;
-- (UIScrollView *(^)(BOOL bounces))set_bounces;
-- (UIScrollView *(^)(BOOL alwaysBounceVertical))set_alwaysBounceVertical;
-- (UIScrollView *(^)(BOOL alwaysBounceHorizontal))set_alwaysBounceHorizontal;
-- (UIScrollView *(^)(CGFloat minimumZoomScale))set_minimumZoomScale;
-- (UIScrollView *(^)(CGFloat maximumZoomScale))set_maximumZoomScale;
+- (UIScrollView *(^)(id delegate))qt_setDelegate;
+- (UIScrollView *(^)(CGSize size))qt_setContentSize;
+- (UIScrollView *(^)(CGPoint contentOffset, BOOL animated))qt_setContentOffset;
+- (UIScrollView *(^)(UIEdgeInsets contentInset))qt_setContentInset;
+- (UIScrollView *(^)(BOOL bounces))qt_setBounces;
+- (UIScrollView *(^)(BOOL alwaysBounceVertical))qt_setAlwaysBounceVertical;
+- (UIScrollView *(^)(BOOL alwaysBounceHorizontal))qt_setAlwaysBounceHorizontal;
+- (UIScrollView *(^)(CGFloat minimumZoomScale))qt_setMinimumZoomScale;
+- (UIScrollView *(^)(CGFloat maximumZoomScale))qt_setMaximumZoomScale;
 
 - (UIScrollView *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
 

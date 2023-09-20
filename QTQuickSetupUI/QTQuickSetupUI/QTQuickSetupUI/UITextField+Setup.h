@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextField (Setup)
-- (UITextField *(^)(UIColor *placeColor))set_placeholdColor;
-- (UITextField *(^)(NSString * borderColor))set_text;
-- (UITextField *(^)(NSString * placehold))set_placehold;
-- (UITextField *(^)(UIColor *textColor))set_textColor;
-- (UITextField *(^)(UIFont *font))set_font;
-- (UITextField *(^)(NSTextAlignment alignment))set_alignment;
+- (UITextField *(^)(UIColor *placeColor))qt_setPlaceholdColor;
+- (UITextField *(^)(NSString * borderColor))qt_setText;
+- (UITextField *(^)(NSString * placehold))qt_setPlacehold;
+- (UITextField *(^)(UIColor *textColor))qt_setTextColor;
+- (UITextField *(^)(UIFont *font))qt_setFont;
+- (UITextField *(^)(NSTextAlignment alignment))qt_setAlignment;
 
 - (UITextField *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
 

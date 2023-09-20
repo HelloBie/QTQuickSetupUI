@@ -10,13 +10,13 @@
 
 @interface UIButton (Setup)
 
-- (UIButton *(^)(NSString *title))set_title;
-- (UIButton *(^)(UIColor *titleColor))set_titleColor;
-- (UIButton *(^)(NSString * backgroundImage))set_backgroundImage;
-- (UIButton *(^)(UIImage * image))set_image;
-- (UIButton *(^)(UIEdgeInsets titleEdgeInsets))set_titleEdgeInsets;
-- (UIButton *(^)(UIEdgeInsets imageEdgeInsets))set_imageEdgeInsets;
-- (UIButton *(^)(CGFloat spacing))set_textDown;
+- (UIButton *(^)(NSString *title))qt_setTitle;
+- (UIButton *(^)(UIColor *titleColor))qt_setTitleColor;
+- (UIButton *(^)(NSString * backgroundImage))qt_setBackgroundImage;
+- (UIButton *(^)(UIImage * image))qt_setImage;
+- (UIButton *(^)(UIEdgeInsets titleEdgeInsets))qt_setTitleEdgeInsets;
+- (UIButton *(^)(UIEdgeInsets imageEdgeInsets))qt_setImageEdgeInsets;
+- (UIButton *(^)(CGFloat spacing))qt_setTextDown;
 
 - (UIButton *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
 

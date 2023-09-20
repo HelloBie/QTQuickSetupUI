@@ -10,7 +10,7 @@
 
 @implementation UIScrollView (Setup)
 
-- (UIScrollView *(^)(id delegate))set_delegate
+- (UIScrollView *(^)(id delegate))qt_setDelegate
 {
     return ^(id delegate){
         self.delegate = delegate;
@@ -18,7 +18,7 @@
     };
 }
 
-- (UIScrollView *(^)(CGSize size))set_contentSize
+- (UIScrollView *(^)(CGSize size))qt_setContentSize
 {
     return ^(CGSize size)
     {
@@ -28,7 +28,7 @@
     };
 }
 
-- (UIScrollView *(^)(CGPoint contentOffset, BOOL animated))set_contentOffset
+- (UIScrollView *(^)(CGPoint contentOffset, BOOL animated))qt_setContentOffset
 {
     return ^(CGPoint contentOffset,BOOL animated){
         [self setContentOffset:contentOffset animated:animated];
@@ -36,7 +36,7 @@
     };
 }
 
-- (UIScrollView *(^)(UIEdgeInsets contentInset))set_contentInset
+- (UIScrollView *(^)(UIEdgeInsets contentInset))qt_setContentInset
 {
     return ^(UIEdgeInsets contentInset){
         self.contentInset = contentInset;
@@ -44,7 +44,7 @@
     };
 }
 
-- (UIScrollView *(^)(BOOL bounces))set_bounces
+- (UIScrollView *(^)(BOOL bounces))qt_setBounces
 {
     return ^(BOOL bounces){
         self.bounces = bounces;
@@ -53,7 +53,7 @@
     };
 }
 
-- (UIScrollView *(^)(BOOL alwaysBounceVertical))set_alwaysBounceVertical
+- (UIScrollView *(^)(BOOL alwaysBounceVertical))qt_setAlwaysBounceVertical
 {
     return ^(BOOL alwaysBounceVertical){
         self.alwaysBounceVertical = alwaysBounceVertical;
@@ -61,7 +61,7 @@
     };
 }
 
-- (UIScrollView *(^)(BOOL alwaysBounceHorizontal))set_alwaysBounceHorizontal
+- (UIScrollView *(^)(BOOL alwaysBounceHorizontal))qt_setAlwaysBounceHorizontal
 {
     return ^(BOOL alwaysBounceHorizontal)
     {
@@ -70,7 +70,7 @@
     };
 }
 
-- (UIScrollView *(^)(CGFloat minimumZoomScale))set_minimumZoomScale
+- (UIScrollView *(^)(CGFloat minimumZoomScale))qt_setMinimumZoomScale
 {
     return ^(CGFloat minimumZoomScale){
         self.minimumZoomScale = minimumZoomScale;
@@ -78,7 +78,7 @@
     };
 }
 
-- (UIScrollView *(^)(CGFloat maximumZoomScale))set_maximumZoomScale
+- (UIScrollView *(^)(CGFloat maximumZoomScale))qt_setMaximumZoomScale
 {
     return ^(CGFloat maximumZoomScale){
         self.maximumZoomScale = maximumZoomScale;
