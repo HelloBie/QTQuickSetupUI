@@ -9,16 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Frame)
-@property (nonatomic, assign) CGFloat x;
-@property (nonatomic, assign) CGFloat y;
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
-@property (nonatomic, assign) CGSize size;
-@property (nonatomic, assign) CGFloat centerX;
-@property (nonatomic, assign) CGFloat centerY;
+@property (nonatomic, assign) CGFloat qt_x;
+@property (nonatomic, assign) CGFloat qt_y;
+@property (nonatomic, assign) CGFloat qt_width;
+@property (nonatomic, assign) CGFloat qt_height;
+@property (nonatomic, assign) CGSize qt_size;
+@property (nonatomic, assign) CGFloat qt_centerX;
+@property (nonatomic, assign) CGFloat qt_centerY;
 /** view底部的距离 */
-@property (nonatomic, assign) CGFloat bottom;
+@property (nonatomic, assign) CGFloat qt_bottom;
 /** view右侧的距离 */
-@property (nonatomic, assign) CGFloat right;
+@property (nonatomic, assign) CGFloat qt_right;
 
 @end

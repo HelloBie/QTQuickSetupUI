@@ -9,26 +9,26 @@
 #import "UIView+Setup.h"
 
 @implementation UIView (Setup)
-- (void)setX:(CGFloat)x{
+- (void)setQt_x:(CGFloat)qt_x{
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = qt_x;
     self.frame = frame;
 }
 
-- (CGFloat)x{
+- (CGFloat)qt_x{
     return self.frame.origin.x;
 }
 
-- (void)setY:(CGFloat)y{
+- (void)setQt_y:(CGFloat)qt_y{
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = qt_y;
     self.frame = frame;
 }
 
-- (CGFloat)y{
+- (CGFloat)qt_y{
     return self.frame.origin.y;
 }
-- (NSArray *)getRGBWithColor:(UIColor *)color
+- (NSArray *)qt_getRGBWithColor:(UIColor *)color
 {
     CGFloat red = 0.0;
     CGFloat green = 0.0;
@@ -39,7 +39,7 @@
 }
 
 
-- (UIColor *)colorOfPoint:(CGPoint)point {
+- (UIColor *)qt_colorOfPoint:(CGPoint)point {
     unsigned char pixel[4] = {0};
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef context = CGBitmapContextCreate(pixel, 1, 1, 8, 4, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
@@ -56,151 +56,152 @@
     return color;
 }
 #pragma mark - Location
-- (CGPoint)origin
+- (CGPoint)qt_origin
 {
     return self.frame.origin;
 }
 
-- (void)setOrigin:(CGPoint)origin
+- (void)setQt_origin:(CGPoint)qt_origin
 {
     CGRect newframe = self.frame;
-    newframe.origin = origin;
+    newframe.origin = qt_origin;
     self.frame = newframe;
 }
 
-- (CGFloat)top
+- (CGFloat)qt_top
 {
     return self.frame.origin.y;
 }
 
-- (void)setTop:(CGFloat)top
+- (void)setQt_top:(CGFloat)qt_top
 {
     CGRect newframe = self.frame;
-    newframe.origin.y = top;
+    newframe.origin.y = qt_top;
     self.frame = newframe;
 }
 
-- (CGFloat)left
+- (CGFloat)qt_left
+
 {
     return self.frame.origin.x;
 }
 
-- (void)setLeft:(CGFloat)left
+- (void)setQt_left:(CGFloat)qt_left
 {
     CGRect newframe = self.frame;
-    newframe.origin.x = left;
+    newframe.origin.x = qt_left;
     self.frame = newframe;
 }
 
-- (CGFloat)bottom
+- (CGFloat)qt_bottom
 {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (void)setBottom:(CGFloat)bottom
+- (void)setQt_bottom:(CGFloat)qt_bottom
 {
     CGRect newframe = self.frame;
-    newframe.origin.y = bottom - self.frame.size.height;
+    newframe.origin.y = qt_bottom - self.frame.size.height;
     self.frame = newframe;
 }
 
-- (CGFloat)right
+- (CGFloat)qt_right
 {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setRight:(CGFloat)right
+- (void)setQt_right:(CGFloat)qt_right
 {
     CGRect newframe = self.frame;
-    newframe.origin.x = right - self.frame.size.width;
+    newframe.origin.x = qt_right - self.frame.size.width;
     self.frame = newframe;
 }
 
 #pragma mark - Center
-- (CGFloat)centerX
+- (CGFloat)qt_centerX
 {
     return self.center.x;
 }
 
-- (void)setCenterX:(CGFloat)centerX
+- (void)setQt_centerX:(CGFloat)qt_centerX
 {
     CGPoint newCenter = self.center;
-    newCenter.x = centerX;
+    newCenter.x = qt_centerX;
     self.center = newCenter;
 }
 
-- (CGFloat)centerY
+- (CGFloat)qt_centerY
 {
     return self.center.y;
 }
 
-- (void)setCenterY:(CGFloat)centerY
+- (void)setQt_centerY:(CGFloat)qt_centerY
 {
     CGPoint newCenter = self.center;
-    newCenter.y = centerY;
+    newCenter.y = qt_centerY;
     self.center = newCenter;
 }
 
 #pragma mark - Size
-- (CGSize)size
+- (CGSize)qt_size
 {
     return self.frame.size;
 }
 
-- (void)setSize:(CGSize)size
+- (void)setQt_size:(CGSize)qt_size
 {
     CGRect newframe = self.frame;
-    newframe.size = size;
+    newframe.size = qt_size;
     self.frame = newframe;
 }
 
-- (CGFloat)height
+- (CGFloat)qt_height
 {
     return self.frame.size.height;
 }
 
-- (void)setHeight:(CGFloat)height
+- (void)setQt_height:(CGFloat)qt_height
 {
     CGRect newframe = self.frame;
-    newframe.size.height = height;
+    newframe.size.height = qt_height;
     self.frame = newframe;
 }
 
-- (CGFloat)width
+- (CGFloat)qt_width
 {
     return self.frame.size.width;
 }
 
-- (void)setWidth:(CGFloat)width
+- (void)setQt_width:(CGFloat)qt_width
 {
     CGRect newframe = self.frame;
-    newframe.size.width = width;
+    newframe.size.width = qt_width;
     self.frame = newframe;
 }
 
 #pragma mark - Other Origin
-- (CGPoint)bottomRight
+- (CGPoint)qt_bottomRight
 {
     CGFloat x = self.frame.origin.x + self.frame.size.width;
     CGFloat y = self.frame.origin.y + self.frame.size.height;
     return CGPointMake(x, y);
 }
 
-- (CGPoint)bottomLeft
+- (CGPoint)qt_bottomLeft
 {
     CGFloat x = self.frame.origin.x;
     CGFloat y = self.frame.origin.y + self.frame.size.height;
     return CGPointMake(x, y);
 }
 
-- (CGPoint)topRight
+- (CGPoint)qt_topRight
 {
     CGFloat x = self.frame.origin.x + self.frame.size.width;
     CGFloat y = self.frame.origin.y;
     return CGPointMake(x, y);
 }
 
-- (UIImage *)saveImageWithScale:(float)scale
+- (UIImage *)qt_saveImageWithScale:(float)scale
 {
     UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, scale);
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
@@ -210,7 +211,7 @@
 }
 
 
-- (UIView *(^)(UIColor *backgroundColor))set_backgroundColor
+- (UIView *(^)(UIColor *backgroundColor))qt_setBackgroundColor
 {
     return ^(UIColor *backgroundColor)
     {
@@ -219,7 +220,7 @@
     };
 }
 
-- (UIView *(^)(UIColor *borderColor))set_borderColor
+- (UIView *(^)(UIColor *borderColor))qt_setBorderColor
 {
     return ^(UIColor *borderColor){
         self.layer.borderColor = borderColor.CGColor;
@@ -227,7 +228,7 @@
     };
 }
 
-- (UIView *(^)(CGRect frame))set_frame
+- (UIView *(^)(CGRect frame))qt_setFrame
 {
     return ^(CGRect frame){
         self.frame = frame;
@@ -235,7 +236,7 @@
     };
 }
 
-- (UIView *(^)(UIView *superView))set_superView
+- (UIView *(^)(UIView *superView))qt_setSuperView
 {
     return ^(UIView *superView){
         [superView addSubview:self];
@@ -243,7 +244,7 @@
     };
 }
 
-- (UIView *(^)(CGFloat borderwidth))set_borderWidth
+- (UIView *(^)(CGFloat borderwidth))qt_setBorderWidth
 {
     return ^(CGFloat borderwidth){
         self.layer.borderWidth = borderwidth;
@@ -251,7 +252,7 @@
     };
 }
 
-- (UIView *(^)(CGFloat radius))set_radius
+- (UIView *(^)(CGFloat radius))qt_setRadius
 {
     return ^(CGFloat radius){
         self.layer.cornerRadius = radius;
@@ -259,7 +260,7 @@
     };
 }
 
-- (UIView *(^)(BOOL clipsToBounds))set_clipsToBounds
+- (UIView *(^)(BOOL clipsToBounds))qt_setClipsToBounds
 {
     return ^(BOOL clipsToBounds){
         self.clipsToBounds = clipsToBounds;
@@ -267,7 +268,7 @@
     };
 }
 
-- (UIView *(^)(CGPoint center))set_center
+- (UIView *(^)(CGPoint center))qt_setCenter
 {
     return ^(CGPoint center){
         self.center = center;
@@ -275,7 +276,7 @@
     };
 }
 
-- (UIView *(^)(CGAffineTransform transForm))set_transForm
+- (UIView *(^)(CGAffineTransform transForm))qt_setTransForm
 {
     return ^(CGAffineTransform transform)
     {
@@ -284,7 +285,7 @@
     };
 }
  
-- (UIView *(^)(BOOL hidden))set_hidden
+- (UIView *(^)(BOOL hidden))qt_setHidden
 {
     return ^(BOOL hidden){
         self.hidden = hidden;
@@ -293,7 +294,7 @@
     };
 }
 
-- (UIView *(^)(BOOL userInteractionEnabled))set_userInteractionEnabled
+- (UIView *(^)(BOOL userInteractionEnabled))qt_setUserInteractionEnabled
 {
     return ^(BOOL userInteractionEnabled){
         self.userInteractionEnabled = userInteractionEnabled;

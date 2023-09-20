@@ -12,47 +12,60 @@
 /**
  *  location
  */
-@property(nonatomic, assign) CGPoint origin;
-@property(nonatomic, assign) CGFloat top;
-@property(nonatomic, assign) CGFloat left;
-@property(nonatomic, assign) CGFloat bottom;
-@property(nonatomic, assign) CGFloat right;
+@property(nonatomic, assign) CGPoint qt_origin;
+@property(nonatomic, assign) CGFloat qt_top;
+@property(nonatomic, assign) CGFloat qt_left;
+@property(nonatomic, assign) CGFloat qt_bottom;
+@property(nonatomic, assign) CGFloat qt_right;
 
 /**
  *  center
  */
-@property(nonatomic, assign) CGFloat centerY;
-@property(nonatomic, assign) CGFloat centerX;
+@property(nonatomic, assign) CGFloat qt_centerY;
+@property(nonatomic, assign) CGFloat qt_centerX;
 
 /**
  *  size
  */
-@property(nonatomic, assign) CGFloat x;
-@property(nonatomic, assign) CGFloat y;
-@property(nonatomic, assign) CGSize size;
-@property(nonatomic, assign) CGFloat height;
-@property(nonatomic, assign) CGFloat width;
+@property(nonatomic, assign) CGFloat qt_x;
+@property(nonatomic, assign) CGFloat qt_y;
+@property(nonatomic, assign) CGSize qt_size;
+@property(nonatomic, assign) CGFloat qt_height;
+@property(nonatomic, assign) CGFloat qt_width;
 
 /**
  *  Other Origin
  */
-@property(nonatomic, assign, readonly) CGPoint bottomLeft;
-@property(nonatomic, assign, readonly) CGPoint bottomRight;
-@property(nonatomic, assign, readonly) CGPoint topRight;
+@property(nonatomic, assign, readonly) CGPoint qt_bottomLeft;
+@property(nonatomic, assign, readonly) CGPoint qt_bottomRight;
+@property(nonatomic, assign, readonly) CGPoint qt_topRight;
 
-- (UIImage *)saveImageWithScale:(float)scale;
-- (UIView *(^)(UIColor *backgroundColor))   set_backgroundColor;
-- (UIView *(^)(UIColor *borderColor))       set_borderColor;
-- (UIView *(^)(CGRect frame))               set_frame;
-- (UIView *(^)(UIView *superView))          set_superView;
-- (UIView *(^)(CGFloat borderwidth))        set_borderWidth;
-- (UIView *(^)(CGFloat radius))             set_radius;
-- (UIView *(^)(BOOL clipsToBounds))         set_clipsToBounds;
-- (UIView *(^)(CGPoint center))             set_center;
-- (UIView *(^)(CGAffineTransform transForm))set_transForm;
-- (UIView *(^)(BOOL hidden))                set_hidden;
-- (UIView *(^)(BOOL userInteractionEnabled))set_userInteractionEnabled;
-- (UIColor *)colorOfPoint:(CGPoint)point;
-- (NSArray *)getRGBWithColor:(UIColor *)color;
+- (UIImage *)qt_saveImageWithScale:(float)scale;
+
+- (UIView *(^)(UIColor *backgroundColor))qt_setBackgroundColor;
+
+- (UIView *(^)(UIColor *borderColor))qt_setBorderColor;
+
+- (UIView *(^)(CGRect frame))qt_setFrame;
+
+- (UIView *(^)(UIView *superView))qt_setSuperView;
+
+- (UIView *(^)(CGFloat borderwidth))qt_setBorderWidth;
+
+- (UIView *(^)(CGFloat radius))qt_setRadius;
+
+- (UIView *(^)(BOOL clipsToBounds))qt_setClipsToBounds;
+
+- (UIView *(^)(CGPoint center))qt_setCenter;
+
+- (UIView *(^)(CGAffineTransform transForm))qt_setTransForm;
+
+- (UIView *(^)(BOOL hidden))qt_setHidden;
+
+- (UIView *(^)(BOOL userInteractionEnabled))qt_setUserInteractionEnabled;
+
+- (UIColor *)qt_colorOfPoint:(CGPoint)point;
+
+- (NSArray *)qt_getRGBWithColor:(UIColor *)color;
 
 @end

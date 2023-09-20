@@ -9,102 +9,101 @@
 #import "UIView+Frame.h"
 
 @implementation UIView (Frame)
-- (void)setX:(CGFloat)x{
+- (void)setQt_x:(CGFloat)qt_x {
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = qt_x;
     self.frame = frame;
 }
 
-- (CGFloat)x{
+- (CGFloat)qt_x{
     return self.frame.origin.x;
 }
 
-- (void)setY:(CGFloat)y{
+- (void)setQt_y:(CGFloat)qt_y{
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = qt_y;
     self.frame = frame;
 }
 
-- (CGFloat)y{
+- (CGFloat)qt_y{
     return self.frame.origin.y;
 }
 
-
-- (void)setWidth:(CGFloat)width{
+-(void)setQt_width:(CGFloat)qt_width{
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = qt_width;
     self.frame = frame;
 }
 
-- (CGFloat)width{
+- (CGFloat)qt_width{
     return self.frame.size.width;
 }
 
-- (void)setHeight:(CGFloat)height{
+-(void)setQt_height:(CGFloat)qt_height{
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = qt_height;
     self.frame = frame;
 }
 
-- (CGFloat)height{
+- (CGFloat)qt_height{
     return self.frame.size.height;
 }
 
 
-- (void)setCenterX:(CGFloat)centerX{
+- (void)setQt_centerX:(CGFloat)qt_centerX{
     CGPoint point = self.center;
-    point.x = centerX;
+    point.x = qt_centerX;
     self.center = point;
 }
 
-- (CGFloat)centerX{
+- (CGFloat)qt_centerX{
     return self.center.x;
 }
 
-- (void)setCenterY:(CGFloat)centerY{
+-(void)setQt_centerY:(CGFloat)qt_centerY{
     CGPoint point = self.center;
-    point.y = centerY;
+    point.y = qt_centerY;
     self.center = point;
 }
 
-- (CGFloat)centerY{
+- (CGFloat)qt_centerY{
     return self.center.y;
 }
 
-- (void)setSize:(CGSize)size{
+-(void)setQt_size:(CGSize)qt_size{
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = qt_size;
     self.frame = frame;
 }
 
 
-- (CGSize)size{
+- (CGSize)qt_size{
     return self.frame.size;
 }
 
 
 
-- (CGFloat)right
+- (CGFloat)qt_right
 {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setRight:(CGFloat)right
+- (void)setQt_right:(CGFloat)qt_right
 {
     CGRect frame = self.frame;
-    frame.origin.x = right - self.frame.size.width;
+    frame.origin.x = qt_right - self.frame.size.width;
     self.frame = frame;
 }
 
-- (CGFloat)bottom
+- (CGFloat)qt_bottom
 {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (void)setBottom:(CGFloat)bottom
+- (void)setQt_bottom:(CGFloat)qt_bottom
 {
     CGRect frame = self.frame;
-    frame.origin.y = bottom - self.frame.size.height;
+    frame.origin.y = qt_bottom - self.frame.size.height;
     self.frame = frame;
 }
 
