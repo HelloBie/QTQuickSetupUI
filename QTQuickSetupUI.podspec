@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
 s.name         = "QTQuickSetupUI"
-s.version      = "0.7"
+s.version      = "0.72"
 s.summary      = "QTQuickSetupUI"
 
 
@@ -32,7 +32,7 @@ s.source_files  = 'QTQuickSetupUI/QTQuickSetupUI/QTQuickSetupUI/*.{h,m}'
 
 
 
-s.dependency 'SDWebImage'
+#s.dependency 'SDWebImage'
 
 # s.resource  = "icon.png"
 # s.resources = "Resources/*.png"
