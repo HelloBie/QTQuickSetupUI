@@ -201,7 +201,7 @@
     return CGPointMake(x, y);
 }
 
-- (UIImage *)qt_saveImageWithScale:(float)scale
+- (UIImage *)qt_getImageWithScale:(float)scale
 {
     UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, scale);
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
