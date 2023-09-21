@@ -9,15 +9,36 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScrollView (Setup)
+
+/// 设置代理 参数:(id )
 - (UIScrollView *(^)(id delegate))qt_setDelegate;
+
+/// 设置ContentSize 参数:(CGSize )
 - (UIScrollView *(^)(CGSize size))qt_setContentSize;
+
+/// 设置ContentOffset 参数:(CGPoint contentOffset, BOOL animated )
 - (UIScrollView *(^)(CGPoint contentOffset, BOOL animated))qt_setContentOffset;
+
+/// 设置ContentInset 参数:(UIEdgeInsets )
 - (UIScrollView *(^)(UIEdgeInsets contentInset))qt_setContentInset;
+
+/// 设置bounces 参数:(BOOL)
 - (UIScrollView *(^)(BOOL bounces))qt_setBounces;
+
+/// 设置AlwaysBounceVertical 参数:(BOOL)
 - (UIScrollView *(^)(BOOL alwaysBounceVertical))qt_setAlwaysBounceVertical;
+
+/// 设置AlwaysBounceHorizontal 参数:(BOOL)
 - (UIScrollView *(^)(BOOL alwaysBounceHorizontal))qt_setAlwaysBounceHorizontal;
+
+/// 设置inimumZoomScale 参数:(CGFloat)
 - (UIScrollView *(^)(CGFloat minimumZoomScale))qt_setMinimumZoomScale;
+
+/// 设置MaximumZoomScale 参数:(CGFloat)
 - (UIScrollView *(^)(CGFloat maximumZoomScale))qt_setMaximumZoomScale;
+
+
+
 
 /// 设置背景颜色 参数:(UIColor *)
 - (UIScrollView *(^)(UIColor *backgroundColor))qt_setBackgroundColor;

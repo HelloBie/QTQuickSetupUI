@@ -10,13 +10,29 @@
 
 @interface UIButton (Setup)
 
+/// 设置按钮标题 参数:(NSString *)
 - (UIButton *(^)(NSString *title))qt_setTitle;
+
+/// 设置标题字体颜色 参数:(UIColor *)
 - (UIButton *(^)(UIColor *titleColor))qt_setTitleColor;
+
+/// 设置backgroundImage 参数:(NSString *)
 - (UIButton *(^)(NSString * backgroundImage))qt_setBackgroundImage;
+
+/// 设置image 参数:(UIImage *)
 - (UIButton *(^)(UIImage * image))qt_setImage;
+
+/// 设置TitleEdgeInsets 参数:(UIEdgeInsets )
 - (UIButton *(^)(UIEdgeInsets titleEdgeInsets))qt_setTitleEdgeInsets;
+
+/// 设置ImageEdgeInsets 参数:(UIEdgeInsets )
 - (UIButton *(^)(UIEdgeInsets imageEdgeInsets))qt_setImageEdgeInsets;
+
+/// 设置标题文字位置下移 参数:(CGFloat )
 - (UIButton *(^)(CGFloat spacing))qt_setTextDown;
+
+
+
 
 /// 设置背景颜色 参数:(UIColor *)
 - (UIButton *(^)(UIColor *backgroundColor))qt_setBackgroundColor;

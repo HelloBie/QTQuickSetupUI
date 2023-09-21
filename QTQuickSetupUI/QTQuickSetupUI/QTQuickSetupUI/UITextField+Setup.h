@@ -9,11 +9,27 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextField (Setup)
+
+/// 设置占位字符字体颜色 参数:(UIColor *)
 - (UITextField *(^)(UIColor *placeColor))qt_setPlaceholdColor;
+
+/// 设置Text 参数:(NSString *)
 - (UITextField *(^)(NSString * borderColor))qt_setText;
+
+/// 设置背景颜色 参数:(NSString *)
 - (UITextField *(^)(NSString * placehold))qt_setPlacehold;
+
+/// 设置字体颜色 参数:(UIColor *)
 - (UITextField *(^)(UIColor *textColor))qt_setTextColor;
+
+/// 设置字体 参数:(UIFont *)
 - (UITextField *(^)(UIFont *font))qt_setFont;
+
+
+
+
+
+/// 设置背景颜色 参数:(UIColor *)
 - (UITextField *(^)(NSTextAlignment alignment))qt_setAlignment;
 
 /// 设置背景颜色 参数:(UIColor *)

@@ -9,10 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (Setup)
+
+/// 设置Text 参数:(NSString *)
 - (UILabel *(^)(NSString *text))qt_setText;
+
+/// 设置字体颜色 参数:(UIColor *)
 - (UILabel *(^)(UIColor *textColor))qt_setTextColor;
+
+/// 设置字体 参数:(UIFont *)
 - (UILabel *(^)(UIFont *font))qt_setFont;
+
+/// 设置TextAlignment 参数:(NSTextAlignment *)
 - (UILabel *(^)(NSTextAlignment textAlignment))qt_setTextAlignment;
+
+/// 设置最大行数 参数:(NSInteger)
 - (UILabel *(^)(NSInteger numberOfline))qt_setNumberOfLine;
 
 /// 设置背景颜色 参数:(UIColor *)

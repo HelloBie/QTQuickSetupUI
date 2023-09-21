@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 @interface UIImageView (Setup)
+
+
+/// 设置image 参数:(UIImage *)
 - (UIImageView *(^)(UIImage *image))qt_setImage;
+
+/// 设置帧动画 参数:(NSArray *)
 - (UIImageView *(^)(NSArray *animationImages))qt_setAnimationImages;
 
 
